@@ -55,5 +55,10 @@ public class Phonebook_Test {
        assertEquals("maryam",phonebook.updateContactPhoneNumber("maryam","09121216441"));
 
    }
+   @Test
+    public void deleteContact_test()
+   {
+       
+   }
 
 }

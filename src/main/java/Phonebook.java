@@ -44,12 +44,6 @@ public class Phonebook {
         }
         return 0;
     }
-    /**
-     * A simple function to update our contact name
-     * @param name is the name of the contact who we want to change
-     * @param newPhone is the new phone number of that contact
-     * @return 1 if changing was successful and 0 if it missed
-     */
     public int updateContactPhoneNumber(String name, String newPhone){
         for (Person contact : contacts) {
             if (contact == null)
