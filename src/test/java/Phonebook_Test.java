@@ -51,8 +51,8 @@ public class Phonebook_Test {
        Person person2=new Person("maryam","09912650261");
        phonebook.addContact(person1);
        phonebook.addContact(person2);
-       assertEquals("saye",phonebook.updateContactPhoneNumber("saye","09031315756"));
-       assertEquals("maryam",phonebook.updateContactPhoneNumber("maryam","09121216441"));
+       assertEquals(0,phonebook.updateContactPhoneNumber("saye","09031315756"));
+       assertEquals(1,phonebook.updateContactPhoneNumber("maryam","09121216441"));
 
    }
    @Test
