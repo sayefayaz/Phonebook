@@ -12,11 +12,6 @@ public class Phonebook {
         contacts.add(contact);
     }
 
-    /**
-     * A Method to find a specific user's phone number by entering him/her name
-     * @param name is the name of our contact
-     * @return  is the phone number or an error (happens when we didn't find contact)
-     */
     public String getPhoneNumber(String name){
         for (Person contact : contacts) {
             if(contact == null)
@@ -27,11 +22,6 @@ public class Phonebook {
         return "Contact Not Found";
     }
 
-    /**
-     * @param name is The name of the contact who we are looking for
-     * if we found the contact who we were looking for, we show the information
-     * @return 1 if we found contact and 0 if we couldn't find it
-    */
     public int getContact(String name){
         for (Person contact : contacts) {
             if (contact == null)
@@ -43,13 +33,6 @@ public class Phonebook {
         }
         return 0;
     }
-
-    /**
-     * A simple function to update our contact name
-     * @param name is the name of the contact who we want to change
-     * @param newName is the new name of that conract
-     * @return 1 if changing was successful and 0 if it missed
-     */
     public int updateContactName(String name, String newName){
         for (Person contact : contacts) {
             if (contact == null)
