@@ -24,11 +24,11 @@ public class Phonebook_Test {
     public void getContact_test()
     {
         Phonebook phonebook=new Phonebook();
-        Person person1=new Person("saye","09055524298");
+        Person person1=new Person("saye","09055524299");
         Person person2=new Person("maryam","09912650261");
         phonebook.addContact(person1);
         phonebook.addContact(person2);
-        assertEquals("saye",phonebook.getContact("09055524298"));
+        assertEquals("saye",phonebook.getContact("09055524299"));
         assertEquals("maryam",phonebook.getContact("09912650261"));
 
     }
