@@ -40,7 +40,7 @@ public class Phonebook_Test {
         Person person2=new Person("maryam","09912650261");
         phonebook.addContact(person1);
         phonebook.addContact(person2);
-        assertEquals("saye",phonebook.updateContactName("saye","mina"));
+        assertEquals("saye",phonebook.updateContactName("saye","minaa"));
         assertEquals("maryam",phonebook.updateContactName("maryam","saba"));
     }
    @Test
