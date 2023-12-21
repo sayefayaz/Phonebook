@@ -66,19 +66,9 @@ public class Phonebook {
         }
         return 0;
     }
-
-    /**
-     * A method to get all of our contacts in once
-     * @return our List of contacts
-     */
     public ArrayList<Person> getAllContacts(){
         return contacts;
     }
-
-    /**
-     * As a security part of this phonebook, we created this function
-     * here we can hide all contacts at once
-     */
     public void setAllContactsHidden(){
         for (Person contact : contacts) {
             if(contact == null)
@@ -86,10 +76,6 @@ public class Phonebook {
             contact.setHidden();
         }
     }
-    /**
-     * As a security part of this phonebook, we created this function
-     * here we can make all contacts unhidden at once
-     */
     public void setAllContactsUnHidden(){
         for (Person contact : contacts){
             if(contact == null)
