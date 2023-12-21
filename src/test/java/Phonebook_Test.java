@@ -1,11 +1,24 @@
-/**
- * writing unit tests for each method of classes
- * If you have no idea about how to write unit tests, you can search the internet or check your first assignment
- * After each unit test you've written, please commit the changes and push to your repo
+import org.junit.jupiter.api.Test;
 
- * Hint: Your test coverage should be 100%
- * Attention:  We would check your commits and it will affect your score
- */
+import static org.junit.jupiter.api.Assertions.*;
 public class Phonebook_Test {
-
+    @Test
+    public void addcontact_test() {
+        Phonebook phonebook = new Phonebook();
+        Person person1 = new Person("saye", "09055524298");
+        Person person2 = new Person("maryam", "09912650261");
+        phonebook.addContact(person1);
+        phonebook.addContact(person2);
+    }
+    @Test
+    public void getPhoneNumber_test()
+    {
+        Phonebook phonebook=new Phonebook();
+        Person person1=new Person("saye","09055524298");
+        Person person2=new Person("maryam","09912650261");
+        phonebook.addContact(person1);
+        phonebook.addContact(person2);
+        assertEquals("09055524298",phonebook.getPhoneNumber("saye"));
+        assertEquals("09912650261",phonebook.getPhoneNumber("maryam"));
+    }
 }

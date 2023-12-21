@@ -8,10 +8,6 @@ public class Phonebook {
         this.contacts = new ArrayList<>();
     }
 
-    /**
-     * A Simple function to add a new contact
-     * @param contact is the Person that we created and just adding it
-     */
     public void addContact(Person contact){
         contacts.add(contact);
     }
