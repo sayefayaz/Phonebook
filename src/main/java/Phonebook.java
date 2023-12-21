@@ -55,12 +55,6 @@ public class Phonebook {
         }
         return 0;
     }
-
-    /**
-     * A function to delete a specific contact from phonebook
-     * @param name is the name of that contact
-     * @return 1 if deleting was successful and 0 if it wasn't
-     */
     public int deleteContact(String name){
         for (Person contact : contacts) {
             if (contact == null)
